@@ -431,6 +431,6 @@ def categoryToWOE(df, variable, flag, sample=None, varOrder=True):
             
     variable_woe_df = pd.DataFrame([variable_woe]).T
     variable_woe_df = variable_woe_df.reset_index()
-    variable_woe_df.columns = [variable, 'WOE']
+    variable_woe_df.columns = [variable, variable+'_WOE']
     
     return variable_woe_df 
